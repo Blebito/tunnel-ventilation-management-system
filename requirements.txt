@@ -1,0 +1,25 @@
+# ============================================================
+#  Tunnel Ventilation Control System — Python Dependencies
+#  Bachelor's Thesis · Andrei Blebea · Politehnica București · 2025
+# ============================================================
+#
+#  Simulation mode (PC / any OS):
+#    No external packages required.
+#    All dependencies (time, argparse, random) are Python stdlib.
+#
+#    Run with:
+#      python3 ventilation_tunnel.py --simulate
+#
+#  Hardware mode (Raspberry Pi 5 only):
+#    Requires RPi.GPIO, available only on Raspberry Pi OS.
+#    Install with:
+#      pip install -r requirements.txt
+#
+#    Run with:
+#      python3 ventilation_tunnel.py
+#
+# ============================================================
+
+# GPIO control — Raspberry Pi hardware only
+# Not required for --simulate mode on PC
+RPi.GPIO>=0.7.1
