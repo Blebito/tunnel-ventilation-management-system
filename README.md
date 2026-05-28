@@ -59,6 +59,8 @@ Hybrid Filtration & Ventilation System (HEPA H13 + Activated Carbon)
 
 ### Hardware Stack
 
+![Hardware Wiring](docs/images/hardware_wiring_diagram.svg)
+
 | Component | Details |
 |-----------|---------|
 | Central Processing Unit | Raspberry Pi 4 / 5 (industrial enclosure, stabilized PSU, high-endurance SD) |
