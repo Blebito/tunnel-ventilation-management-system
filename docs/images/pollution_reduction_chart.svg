@@ -1,0 +1,80 @@
+<svg width="680" height="520" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif" role="img">
+  <title>Estimated Pollutant Reduction — Hybrid HEPA + Activated Carbon System</title>
+  <desc>Grouped bar chart showing before and after concentrations for PM2.5, PM10, NOx and CO with WHO safe thresholds marked. PM2.5/PM10 reduced ~80%, NOx ~55%, CO ~60%.</desc>
+
+  <rect width="680" height="520" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="340" y="32" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="600" fill="#2C2C2A">Estimated pollutant reduction — Obor underpass</text>
+  <text x="340" y="52" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#5F5E5A">Hybrid HEPA H13 + activated carbon system · values normalised to 100% = typical tunnel peak</text>
+
+  <!-- Y-axis -->
+  <line x1="80" y1="72" x2="80" y2="390" stroke="#B4B2A9" stroke-width="0.8"/>
+
+  <!-- Gridlines + Y labels -->
+  <line x1="80" y1="72"  x2="640" y2="72"  stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="4 3"/>
+  <text x="72" y="72"  text-anchor="end" dominant-baseline="central" font-size="11" fill="#5F5E5A">100%</text>
+  <line x1="80" y1="126" x2="640" y2="126" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="4 3"/>
+  <text x="72" y="126" text-anchor="end" dominant-baseline="central" font-size="11" fill="#5F5E5A">80%</text>
+  <line x1="80" y1="180" x2="640" y2="180" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="4 3"/>
+  <text x="72" y="180" text-anchor="end" dominant-baseline="central" font-size="11" fill="#5F5E5A">60%</text>
+  <line x1="80" y1="234" x2="640" y2="234" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="4 3"/>
+  <text x="72" y="234" text-anchor="end" dominant-baseline="central" font-size="11" fill="#5F5E5A">40%</text>
+  <line x1="80" y1="288" x2="640" y2="288" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="4 3"/>
+  <text x="72" y="288" text-anchor="end" dominant-baseline="central" font-size="11" fill="#5F5E5A">20%</text>
+  <line x1="80" y1="390" x2="640" y2="390" stroke="#888780" stroke-width="1"/>
+  <text x="72" y="390" text-anchor="end" dominant-baseline="central" font-size="11" fill="#5F5E5A">0%</text>
+
+  <!-- Y-axis label -->
+  <text x="18" y="231" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#5F5E5A" transform="rotate(-90,18,231)">Concentration (% of unfiltered peak)</text>
+
+  <!-- ── GROUP 1: PM2.5 ── -->
+  <!-- Before (100%) -->
+  <rect x="112" y="72" width="42" height="318" rx="4" fill="#F7C1C1" stroke="#E24B4A" stroke-width="1"/>
+  <text x="133" y="64" text-anchor="middle" font-size="11" fill="#A32D2D">100%</text>
+  <!-- After (20%) -->
+  <rect x="158" y="337" width="42" height="53" rx="4" fill="#9FE1CB" stroke="#1D9E75" stroke-width="1"/>
+  <text x="179" y="329" text-anchor="middle" font-size="11" fill="#085041">20%</text>
+  <!-- Labels -->
+  <text x="165" y="408" text-anchor="middle" font-size="13" font-weight="600" fill="#2C2C2A">PM2.5</text>
+  <text x="165" y="424" text-anchor="middle" font-size="12" fill="#1D9E75">↓ 80%</text>
+
+  <!-- ── GROUP 2: PM10 ── -->
+  <rect x="222" y="72" width="42" height="318" rx="4" fill="#F7C1C1" stroke="#E24B4A" stroke-width="1"/>
+  <text x="243" y="64" text-anchor="middle" font-size="11" fill="#A32D2D">100%</text>
+  <rect x="268" y="342" width="42" height="48" rx="4" fill="#9FE1CB" stroke="#1D9E75" stroke-width="1"/>
+  <text x="289" y="334" text-anchor="middle" font-size="11" fill="#085041">~22%</text>
+  <text x="275" y="408" text-anchor="middle" font-size="13" font-weight="600" fill="#2C2C2A">PM10</text>
+  <text x="275" y="424" text-anchor="middle" font-size="12" fill="#1D9E75">↓ ~78%</text>
+
+  <!-- ── GROUP 3: NOx ── -->
+  <rect x="332" y="72" width="42" height="318" rx="4" fill="#F5C4B3" stroke="#D85A30" stroke-width="1"/>
+  <text x="353" y="64" text-anchor="middle" font-size="11" fill="#993C1D">100%</text>
+  <rect x="378" y="197" width="42" height="193" rx="4" fill="#9FE1CB" stroke="#1D9E75" stroke-width="1"/>
+  <text x="399" y="189" text-anchor="middle" font-size="11" fill="#085041">~45%</text>
+  <text x="385" y="408" text-anchor="middle" font-size="13" font-weight="600" fill="#2C2C2A">NOx / NO₂</text>
+  <text x="385" y="424" text-anchor="middle" font-size="12" fill="#1D9E75">↓ 55%</text>
+
+  <!-- ── GROUP 4: CO ── -->
+  <rect x="442" y="72" width="42" height="318" rx="4" fill="#FAC775" stroke="#BA7517" stroke-width="1"/>
+  <text x="463" y="64" text-anchor="middle" font-size="11" fill="#633806">100%</text>
+  <rect x="488" y="231" width="42" height="159" rx="4" fill="#9FE1CB" stroke="#1D9E75" stroke-width="1"/>
+  <text x="509" y="223" text-anchor="middle" font-size="11" fill="#085041">~40%</text>
+  <text x="495" y="408" text-anchor="middle" font-size="13" font-weight="600" fill="#2C2C2A">CO</text>
+  <text x="495" y="424" text-anchor="middle" font-size="12" fill="#1D9E75">↓ ~60%</text>
+
+  <!-- ── WHO threshold line ── -->
+  <line x1="80" y1="342" x2="628" y2="342" stroke="#3B6D11" stroke-width="1.5" stroke-dasharray="8 4"/>
+  <text x="632" y="336" font-size="11" fill="#3B6D11" font-weight="600">WHO</text>
+  <text x="632" y="350" font-size="11" fill="#3B6D11">limit</text>
+
+  <!-- ── Legend ── -->
+  <rect x="80" y="452" width="480" height="46" rx="10" fill="#F8F8F6" stroke="#B4B2A9" stroke-width="0.8"/>
+  <rect x="100" y="468" width="14" height="14" rx="3" fill="#F7C1C1" stroke="#E24B4A" stroke-width="1"/>
+  <text x="120" y="475" dominant-baseline="central" font-size="12" fill="#444441">Before filtration (unfiltered tunnel peak)</text>
+  <rect x="320" y="468" width="14" height="14" rx="3" fill="#9FE1CB" stroke="#1D9E75" stroke-width="1"/>
+  <text x="340" y="475" dominant-baseline="central" font-size="12" fill="#444441">After hybrid HEPA + carbon system</text>
+
+  <!-- Footer -->
+  <text x="340" y="510" text-anchor="middle" font-size="10" fill="#B4B2A9">Source: thesis estimates based on WHO AQG 2021 · Politehnica București · Andrei Blebea · 2025</text>
+</svg>
