@@ -1,0 +1,224 @@
+(kicad_sch (version 20231120) (generator eeschema) (generator_version "7.0")
+
+  (lib_symbols
+    (symbol "Connector_Generic:Conn_01x40" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 20.32 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "Raspberry_Pi" (at 0 -20.32 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "Conn_01x40_1_1"
+        (rectangle (start -1.27 -49.53) (end 1.27 50.8) (stroke (width 0.05) (type default)) (fill (type background)))
+        (pin passive line (at -3.81 49.53 0) (length 2.54) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -3.81 46.99 0) (length 2.54) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -3.81 44.45 0) (length 2.54) (name "Pin_3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -3.81 41.91 0) (length 2.54) (name "Pin_4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -3.81 39.37 0) (length 2.54) (name "Pin_5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -3.81 36.83 0) (length 2.54) (name "Pin_6" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -3.81 34.29 0) (length 2.54) (name "Pin_7" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -3.81 31.75 0) (length 2.54) (name "Pin_8" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -3.81 29.21 0) (length 2.54) (name "Pin_9" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at -3.81 26.67 0) (length 2.54) (name "Pin_10" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27)))))
+      )
+    )
+    (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "R" (at 1.524 0 90) (effects (font (size 1.27 1.27))))
+      (property "Value" "1k" (at -1.524 0 90) (effects (font (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle (start -1.016 -2.54) (end 1.016 2.54) (stroke (width 0.254) (type default)) (fill (type none)))
+      )
+      (symbol "R_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+      )
+    )
+    (symbol "Device:D" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "D" (at 0 2.54 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "1N4007" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
+      (symbol "D_0_1"
+        (polyline (pts (xy -1.27 -1.27) (xy -1.27 1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy -1.27 0) (xy 1.27 0)) (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)) (stroke (width 0.254) (type default)) (fill (type filled)))
+      )
+      (symbol "D_1_1"
+        (pin passive line (at -2.54 0 0) (length 1.27) (name "A" (effects (font (size 1.27 1.27)))) (number "A" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 2.54 0 180) (length 1.27) (name "K" (effects (font (size 1.27 1.27)))) (number "K" (effects (font (size 1.27 1.27)))))
+      )
+    )
+    (symbol "Transistor_FET:IRLZ44N" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "Q" (at 5.08 1.27 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "IRLZ44N" (at 5.08 -1.27 0) (effects (font (size 1.27 1.27))))
+      (symbol "IRLZ44N_0_1"
+        (polyline (pts (xy 0 -2.54) (xy 0 2.54)) (stroke (width 0.508) (type default)) (fill (type none)))
+        (polyline (pts (xy 0 -1.27) (xy 2.54 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 0 1.27) (xy 2.54 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
+        (polyline (pts (xy 2.54 -2.54) (xy 2.54 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
+      )
+      (symbol "IRLZ44N_1_1"
+        (pin input line (at -5.08 0 0) (length 5.08) (name "G" (effects (font (size 1.27 1.27)))) (number "G" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 2.54 -5.08 90) (length 2.54) (name "S" (effects (font (size 1.27 1.27)))) (number "S" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 2.54 5.08 270) (length 2.54) (name "D" (effects (font (size 1.27 1.27)))) (number "D" (effects (font (size 1.27 1.27)))))
+      )
+    )
+    (symbol "Device:Motor" (in_bom yes) (on_board yes)
+      (property "Reference" "M" (at 0 5.08 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "Fan_MF50200V1" (at 0 -5.08 0) (effects (font (size 1.27 1.27))))
+      (symbol "Motor_0_1"
+        (circle (center 0 0) (radius 3.81) (stroke (width 0.254) (type default)) (fill (type background)))
+        (polyline (pts (xy -2.54 0) (xy 2.54 0)) (stroke (width 0.508) (type default)) (fill (type none)))
+        (text "M" (at 0 0 0) (effects (font (size 2.54 2.54) (bold yes))))
+      )
+      (symbol "Motor_1_1"
+        (pin passive line (at 0 5.08 270) (length 1.27) (name "+" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+        (pin passive line (at 0 -5.08 90) (length 1.27) (name "-" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+      )
+    )
+    (symbol "Sensor:MQ-135" (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 0 5.08 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "MQ-135" (at 0 -5.08 0) (effects (font (size 1.27 1.27))))
+      (symbol "MQ-135_0_1"
+        (rectangle (start -3.81 -3.81) (end 3.81 3.81) (stroke (width 0.254) (type default)) (fill (type background)))
+        (text "MQ-135" (at 0 0 0) (effects (font (size 1.27 1.27))))
+      )
+      (symbol "MQ-135_1_1"
+        (pin output line (at -6.35 1.27 0) (length 2.54) (name "DO" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at -6.35 -1.27 0) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+        (pin input line (at 6.35 1.27 180) (length 2.54) (name "AO" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+        (pin power_in line (at 6.35 -1.27 180) (length 2.54) (name "Vcc" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+      )
+    )
+  )
+
+  ; ── Power symbols ──────────────────────────────────────────────────────────
+
+  (symbol (lib_id "power:VCC") (at 100 40 0) (unit 1)
+    (property "Reference" "#PWR01" (at 100 44 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "VCC" (at 100 44.45 0) (effects (font (size 1.27 1.27))))
+  )
+  (symbol (lib_id "power:GND") (at 100 100 0) (unit 1)
+    (property "Reference" "#PWR02" (at 100 104 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 100 104.45 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ; ── Raspberry Pi connector ─────────────────────────────────────────────────
+  ; J1 — Generic 40-pin connector standing in for Raspberry Pi 5 GPIO header
+  ; Labels match the KiCad schematic in Figure 13 exactly.
+
+  (symbol (lib_id "Connector_Generic:Conn_02x20_Odd_Even") (at 130 70 0) (unit 1)
+    (property "Reference" "J1" (at 130 48 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "Raspberry_Pi" (at 130 110 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  )
+
+  ; ── MQ-135 Air Quality Sensor ──────────────────────────────────────────────
+  ; U1 — in Figure 13 the box is labelled "Temp Sensor"; kept identical.
+
+  (symbol (lib_id "Sensor:MQ-135") (at 90 65 0) (unit 1)
+    (property "Reference" "U1" (at 90 57 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "MQ-135" (at 90 73 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ; ── MOSFET Q2 (Fan 2 / left side) ─────────────────────────────────────────
+
+  (symbol (lib_id "Transistor_FET:IRLZ44N") (at 80 85 0) (unit 1)
+    (property "Reference" "Q2" (at 86 83 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "IRLZ44N" (at 86 86 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ; ── MOSFET Q1 (Fan 1 / right side) ────────────────────────────────────────
+
+  (symbol (lib_id "Transistor_FET:IRLZ44N") (at 170 85 0) (unit 1)
+    (property "Reference" "Q1" (at 176 83 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "IRLZ44N" (at 176 86 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ; ── Gate resistor R1 (for Q2, GPIO18) ─────────────────────────────────────
+
+  (symbol (lib_id "Device:R") (at 105 85 0) (unit 1)
+    (property "Reference" "R1" (at 107.5 85 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1k" (at 107.5 87.5 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ; ── Gate resistor R2 (for Q1, GPIO23) ─────────────────────────────────────
+
+  (symbol (lib_id "Device:R") (at 155 85 0) (unit 1)
+    (property "Reference" "R2" (at 157.5 85 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1k" (at 157.5 87.5 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ; ── Freewheeling diode D2 (across Fan 2) ──────────────────────────────────
+
+  (symbol (lib_id "Device:D") (at 75 65 0) (unit 1)
+    (property "Reference" "D2" (at 75 62 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4007" (at 75 67.5 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ; ── Freewheeling diode D1 (across Fan 1) ──────────────────────────────────
+
+  (symbol (lib_id "Device:D") (at 175 65 0) (unit 1)
+    (property "Reference" "D1" (at 175 62 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4007" (at 175 67.5 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ; ── Fan M2 (left / Fan 2) ─────────────────────────────────────────────────
+
+  (symbol (lib_id "Device:Motor") (at 70 55 0) (unit 1)
+    (property "Reference" "M2" (at 76 55 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "Fan_MF50200V1" (at 70 62 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ; ── Fan M1 (right / Fan 1) ────────────────────────────────────────────────
+
+  (symbol (lib_id "Device:Motor") (at 180 55 0) (unit 1)
+    (property "Reference" "M1" (at 186 55 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "Fan_MF50200V1" (at 180 62 0) (effects (font (size 1.27 1.27))))
+  )
+
+  ; ── Net labels ────────────────────────────────────────────────────────────
+  ; These match Figure 13 exactly.  GPIO18 drives Q2 gate; GPIO23 drives Q1 gate.
+  ; GPIO17 is the MQ-135 digital output line.
+
+  (label "GPIO18/PWM0" (at 115 85 0) (effects (font (size 1.27 1.27))))
+  (label "GPIO23" (at 145 85 0) (effects (font (size 1.27 1.27))))
+  (label "GPIO17" (at 120 65 0) (effects (font (size 1.27 1.27))))
+
+  ; VCC rails for fans
+
+  (label "VCC" (at 70 46 0) (effects (font (size 1.27 1.27))))
+  (label "VCC" (at 180 46 0) (effects (font (size 1.27 1.27))))
+
+  ; GND rail
+
+  (label "GND" (at 80 100 0) (effects (font (size 1.27 1.27))))
+  (label "GND" (at 170 100 0) (effects (font (size 1.27 1.27))))
+
+  ; ── Wires ─────────────────────────────────────────────────────────────────
+  ; Q2 gate ← R1 ← GPIO18
+  (wire (pts (xy 80 85) (xy 105 85)))
+  ; Q1 gate ← R2 ← GPIO23
+  (wire (pts (xy 155 85) (xy 170 85)))
+  ; Q2 drain → Fan M2 (−) node
+  (wire (pts (xy 80 80) (xy 80 70) (xy 70 70) (xy 70 59)))
+  ; Q1 drain → Fan M1 (−) node
+  (wire (pts (xy 170 80) (xy 170 70) (xy 180 70) (xy 180 59)))
+  ; Q2 source → GND
+  (wire (pts (xy 80 90) (xy 80 100)))
+  ; Q1 source → GND
+  (wire (pts (xy 170 90) (xy 170 100)))
+  ; Fan M2 (+) → VCC
+  (wire (pts (xy 70 51) (xy 70 46)))
+  ; Fan M1 (+) → VCC
+  (wire (pts (xy 180 51) (xy 180 46)))
+  ; D2 cathode → VCC node / D2 anode → Fan M2 drain node
+  (wire (pts (xy 75 62) (xy 75 46)))
+  (wire (pts (xy 75 68) (xy 75 70)))
+  ; D1 cathode → VCC node / D1 anode → Fan M1 drain node
+  (wire (pts (xy 175 62) (xy 175 46)))
+  (wire (pts (xy 175 68) (xy 175 70)))
+  ; U1 DO → GPIO17 label
+  (wire (pts (xy 83.65 66.27) (xy 120 65)))
+  ; U1 VCC → VCC rail
+  (wire (pts (xy 96.35 66.27) (xy 100 46)))
+  ; U1 GND → GND
+  (wire (pts (xy 96.35 63.73) (xy 96.35 100)))
+
+)
