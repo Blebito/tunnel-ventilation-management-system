@@ -121,6 +121,8 @@ The Obor underpass was selected as the pilot site based on a multi-criteria anal
 
 ### Key Figures
 
+![Pollution Reduction](docs/images/pollution_reduction_chart.svg)
+
 - Estimated energy consumption: **15–25 kWh/h** (full operation)
 - Pressure drop per HEPA unit: **250–350 Pa**
 - Estimated PM reduction: **~80%**
