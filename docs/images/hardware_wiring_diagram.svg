@@ -1,0 +1,173 @@
+<svg width="680" height="740" viewBox="0 0 680 740" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif" role="img">
+  <title>Hardware Wiring Diagram — Tunnel Ventilation Prototype</title>
+  <desc>Raspberry Pi 5 connected to MQ-135 sensor via GPIO17, and two fans via IRLZ44N MOSFET transistors on GPIO18 and GPIO23 with 1kOhm gate resistors and 1N4007 flyback diodes. Shared 5V PSU and GND bus.</desc>
+
+  <rect width="680" height="740" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ── PSU ── -->
+  <rect x="36" y="36" width="120" height="64" rx="10" fill="#F1EFE8" stroke="#888780" stroke-width="1"/>
+  <text x="96" y="58" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#2C2C2A">PSU 5V</text>
+  <text x="96" y="78" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">switching supply</text>
+
+  <!-- 5V from PSU along top rail -->
+  <path d="M156 68 L640 68 L640 176" fill="none" stroke="#1D9E75" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="400" y="60" text-anchor="middle" font-size="11" fill="#0F6E56">5V rail</text>
+
+  <!-- GND from PSU -->
+  <path d="M96 100 L96 110 L20 110 L20 682 L36 682" fill="none" stroke="#888780" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arrow-gray)"/>
+
+  <!-- ── RASPBERRY PI ── -->
+  <rect x="220" y="180" width="240" height="200" rx="12" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+  <text x="340" y="208" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#3C3489">Raspberry Pi 5</text>
+
+  <!-- 5V out pin -->
+  <rect x="230" y="222" width="90" height="28" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="275" y="236" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041">5V  (pin 2)</text>
+
+  <!-- GND pin -->
+  <rect x="230" y="256" width="90" height="28" rx="6" fill="#D3D1C7" stroke="#888780" stroke-width="0.8"/>
+  <text x="275" y="270" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#2C2C2A">GND (pin 6)</text>
+
+  <!-- GPIO17 sensor -->
+  <rect x="230" y="290" width="90" height="28" rx="6" fill="#9FE1CB" fill-opacity="0.4" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="275" y="304" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041">GPIO 17</text>
+
+  <!-- GPIO18 fan1 -->
+  <rect x="362" y="256" width="86" height="28" rx="6" fill="#CECBF6" fill-opacity="0.5" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="405" y="270" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#3C3489">GPIO 18</text>
+
+  <!-- GPIO23 fan2 -->
+  <rect x="362" y="290" width="86" height="28" rx="6" fill="#CECBF6" fill-opacity="0.5" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="405" y="304" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#3C3489">GPIO 23</text>
+
+  <text x="340" y="352" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#534AB7">BCM numbering · Python RPi.GPIO · PWM 1 kHz</text>
+
+  <!-- Pi GND to bus -->
+  <path d="M275 284 L215 284 L215 560 L200 560 L200 672 L50 672" fill="none" stroke="#888780" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arrow-gray)"/>
+
+  <!-- ── MQ-135 ── -->
+  <rect x="36" y="240" width="150" height="80" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="111" y="264" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#085041">MQ-135 sensor</text>
+  <text x="111" y="284" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">air quality · digital out</text>
+  <text x="111" y="300" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">VCC · GND · OUT</text>
+
+  <!-- 5V → MQ-135 VCC -->
+  <path d="M96 100 L96 244" fill="none" stroke="#1D9E75" stroke-width="1.8" marker-end="url(#arrow-green)"/>
+  <text x="60" y="178" text-anchor="middle" font-size="11" fill="#0F6E56">VCC</text>
+
+  <!-- MQ-135 OUT → GPIO17 -->
+  <path d="M186 272 L210 272 L210 304 L220 304" fill="none" stroke="#0F6E56" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <text x="197" y="264" text-anchor="middle" font-size="11" fill="#0F6E56">OUT</text>
+
+  <!-- MQ-135 GND -->
+  <path d="M36 300 L20 300 L20 672 L36 672" fill="none" stroke="#888780" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- ── GPIO18 → R1 → Q1 ── -->
+  <path d="M448 270 L456 270" fill="none" stroke="#534AB7" stroke-width="1.5"/>
+  <rect x="456" y="259" width="44" height="22" rx="4" fill="none" stroke="#534AB7" stroke-width="1"/>
+  <text x="478" y="270" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#534AB7">1 kΩ</text>
+  <path d="M500 270 L520 270" fill="none" stroke="#534AB7" stroke-width="1.5" marker-end="url(#arrow-purple)"/>
+
+  <!-- ── MOSFET Q1 ── -->
+  <rect x="520" y="246" width="120" height="70" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+  <text x="580" y="268" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#3C3489">MOSFET Q1</text>
+  <text x="580" y="288" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">IRLZ44N</text>
+  <text x="580" y="304" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#534AB7">Gate · Drain · Source</text>
+
+  <!-- ── GPIO23 → R2 → Q2 ── -->
+  <path d="M448 304 L456 318" fill="none" stroke="#534AB7" stroke-width="1.5"/>
+  <rect x="456" y="316" width="44" height="22" rx="4" fill="none" stroke="#534AB7" stroke-width="1"/>
+  <text x="478" y="327" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#534AB7">1 kΩ</text>
+  <path d="M500 330 L520 360" fill="none" stroke="#534AB7" stroke-width="1.5" marker-end="url(#arrow-purple)"/>
+
+  <!-- ── MOSFET Q2 ── -->
+  <rect x="520" y="356" width="120" height="70" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+  <text x="580" y="378" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#3C3489">MOSFET Q2</text>
+  <text x="580" y="398" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">IRLZ44N</text>
+  <text x="580" y="414" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#534AB7">Gate · Drain · Source</text>
+
+  <!-- ── 5V → Fan 1 drain via Q1 ── -->
+  <path d="M640 68 L640 178" fill="none" stroke="#1D9E75" stroke-width="2"/>
+  <!-- Q1 drain ← 5V top -->
+  <line x1="640" y1="246" x2="640" y2="176" stroke="#1D9E75" stroke-width="1.8" marker-end="url(#arrow-green)"/>
+
+  <!-- Flyback diode D1 -->
+  <text x="654" y="222" font-size="11" fill="#854F0B">D1</text>
+  <polygon points="632,215 648,215 640,228" fill="#854F0B"/>
+  <line x1="632" y1="228" x2="648" y2="228" stroke="#854F0B" stroke-width="1.5"/>
+
+  <!-- FAN 1 -->
+  <rect x="606" y="460" width="68" height="60" rx="10" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+  <ellipse cx="640" cy="478" rx="12" ry="12" fill="none" stroke="#712B13" stroke-width="1.5"/>
+  <ellipse cx="640" cy="478" rx="3" ry="3" fill="#712B13"/>
+  <line x1="640" y1="472" x2="640" y2="466" stroke="#712B13" stroke-width="1.2"/>
+  <line x1="640" y1="484" x2="640" y2="490" stroke="#712B13" stroke-width="1.2"/>
+  <line x1="634" y1="478" x2="628" y2="478" stroke="#712B13" stroke-width="1.2"/>
+  <line x1="646" y1="478" x2="652" y2="478" stroke="#712B13" stroke-width="1.2"/>
+  <text x="640" y="508" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="600" fill="#712B13">Fan 1</text>
+
+  <!-- Fan 1 (+) ← 5V -->
+  <line x1="640" y1="460" x2="640" y2="316" stroke="#1D9E75" stroke-width="1.8" marker-end="url(#arrow-green)"/>
+  <!-- Fan 1 (−) → Q1 source → GND -->
+  <path d="M640 520 L640 560 L570 560 L570 672 L400 672" fill="none" stroke="#888780" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arrow-gray)"/>
+
+  <!-- FAN 2 -->
+  <rect x="518" y="460" width="68" height="60" rx="10" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+  <ellipse cx="552" cy="478" rx="12" ry="12" fill="none" stroke="#712B13" stroke-width="1.5"/>
+  <ellipse cx="552" cy="478" rx="3" ry="3" fill="#712B13"/>
+  <line x1="552" y1="472" x2="552" y2="466" stroke="#712B13" stroke-width="1.2"/>
+  <line x1="552" y1="484" x2="552" y2="490" stroke="#712B13" stroke-width="1.2"/>
+  <line x1="546" y1="478" x2="540" y2="478" stroke="#712B13" stroke-width="1.2"/>
+  <line x1="558" y1="478" x2="564" y2="478" stroke="#712B13" stroke-width="1.2"/>
+  <text x="552" y="508" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="600" fill="#712B13">Fan 2</text>
+
+  <!-- Fan 2 (+) ← 5V via side rail -->
+  <path d="M518 478 L510 478 L510 68 L640 68" fill="none" stroke="#1D9E75" stroke-width="1.8"/>
+  <!-- Q2 drain → Fan 2 → GND -->
+  <path d="M580 426 L580 460 L518 460" fill="none" stroke="#1D9E75" stroke-width="1.8" marker-end="url(#arrow-green)"/>
+  <path d="M552 520 L552 545 L450 545 L450 672 L400 672" fill="none" stroke="#888780" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+  <!-- Flyback diode D2 -->
+  <text x="506" y="440" text-anchor="end" font-size="11" fill="#854F0B">D2 · 1N4007</text>
+  <polygon points="498,430 514,430 506,443" fill="#854F0B"/>
+  <line x1="498" y1="443" x2="514" y2="443" stroke="#854F0B" stroke-width="1.5"/>
+
+  <!-- ── GND BUS ── -->
+  <rect x="36" y="670" width="600" height="22" rx="6" fill="#44444114" stroke="#444441" stroke-width="0.6" stroke-dasharray="4 3"/>
+  <text x="340" y="681" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#444441">GND common bus — PSU · Raspberry Pi · MQ-135 · MOSFET sources</text>
+
+  <!-- ── LEGEND ── -->
+  <rect x="36" y="556" width="460" height="104" rx="10" fill="#F8F8F6" stroke="#B4B2A9" stroke-width="0.8" stroke-dasharray="4 3"/>
+  <text x="256" y="576" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#2C2C2A">Connection legend</text>
+  <line x1="52" y1="598" x2="90" y2="598" stroke="#1D9E75" stroke-width="2"/>
+  <text x="98" y="598" dominant-baseline="central" font-size="11" fill="#444441">5V power rail</text>
+  <line x1="52" y1="618" x2="90" y2="618" stroke="#534AB7" stroke-width="2"/>
+  <text x="98" y="618" dominant-baseline="central" font-size="11" fill="#444441">GPIO signal (logic)</text>
+  <line x1="52" y1="638" x2="90" y2="638" stroke="#888780" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="98" y="638" dominant-baseline="central" font-size="11" fill="#444441">GND bus</text>
+  <line x1="236" y1="598" x2="274" y2="598" stroke="#0F6E56" stroke-width="2"/>
+  <text x="282" y="598" dominant-baseline="central" font-size="11" fill="#444441">Sensor data (digital)</text>
+  <polygon points="244,612 260,612 252,624" fill="#854F0B"/>
+  <line x1="244" y1="624" x2="260" y2="624" stroke="#854F0B" stroke-width="1.5"/>
+  <text x="268" y="618" dominant-baseline="central" font-size="11" fill="#444441">Flyback diode 1N4007</text>
+  <line x1="236" y1="638" x2="274" y2="638" stroke="#D85A30" stroke-width="2"/>
+  <text x="282" y="638" dominant-baseline="central" font-size="11" fill="#444441">Fan power (via MOSFET)</text>
+
+  <!-- Footer -->
+  <text x="340" y="724" text-anchor="middle" font-size="10" fill="#B4B2A9">Bachelor's Thesis · Politehnica București · Andrei Blebea · 2025</text>
+</svg>
