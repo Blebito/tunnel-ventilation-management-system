@@ -26,6 +26,8 @@ This gap represents both a public health risk and a regulatory opportunity that 
 
 A four-component closed-loop control system that continuously monitors air quality and dynamically adjusts ventilation output:
 
+![System Architecture](docs/images/system_architecture.svg)
+
 ```
 Sensor Network (PM, NOx, CO)
         │
