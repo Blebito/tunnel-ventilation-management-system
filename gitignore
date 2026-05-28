@@ -1,0 +1,67 @@
+# ============================================================
+#  .gitignore — Tunnel Ventilation Control System
+#  Bachelor's Thesis · Andrei Blebea · Politehnica București · 2025
+# ============================================================
+
+
+# ─── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Logs & runtime output
+*.log
+*.csv.bak
+
+
+# ─── KiCad ────────────────────────────────────────────────
+# Local user preferences (not shared between machines)
+*.kicad_prl
+fp-info-cache
+
+# Auto-generated backup files
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.bak
+*~
+
+# KiCad auto-save
+_autosave-*
+
+# Fabrication outputs (re-generated from source)
+gerber/
+gerbers/
+fab/
+*.gbr
+*.drl
+*.pdf
+
+# 3D model cache
+*.wrl
+
+
+# ─── OS & Editor ──────────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+
+# JetBrains (PyCharm, etc.)
+.idea/
