@@ -104,6 +104,8 @@ The Obor underpass was selected as the pilot site based on a multi-criteria anal
 
 ### CAPEX Estimate (filtration components only)
 
+![CAPEX Breakdown](docs/images/capex_breakdown_chart.svg)
+
 | Item | Unit Cost | Qty | Total |
 |------|-----------|-----|-------|
 | Hybrid HEPA + Carbon module | 500–700 € | 60 | ~30,000–42,000 € |
