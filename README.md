@@ -52,6 +52,7 @@ Hybrid Filtration & Ventilation System (HEPA H13 + Activated Carbon)
 | High     | Level 2 threshold    | 75%       |
 | Critical | Level 3 threshold    | 100% + alert |
 
+![Control Algorithm](docs/images/control_algorithm_flowchart.svg)
 ---
 
 ## System Architecture
